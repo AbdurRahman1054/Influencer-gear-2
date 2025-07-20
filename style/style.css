@@ -86,6 +86,94 @@ li > a {
 .res_bars {
   display: none;
 }
+.sponsor {
+  max-width: 1110px;
+  margin: 0 auto;
+  /* text-align: center; */
+}
+.sponsor_logo {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  /* border-top: 1px solid black; */
+  padding: 15px 0 15px 0px;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+}
+.popular_cart {
+  max-width: 329px;
+  max-height: auto;
+  padding: 14px 17px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+  background: rgb(255, 255, 255);
+}
+.popular_img {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 30px;
+  column-gap: 30px;
+}
+.polular_collection {
+  max-width: 1047px;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+.popular_cart > img {
+  border-radius: 5px;
+}
+.col_header {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: rgb(58, 58, 58);
+}
+.cart_title {
+  font-size: 1.75rem;
+  font-weight: 500;
+  color: #18191f;
+  margin-top: 16px;
+  margin-bottom: 6px;
+}
+.cart_price {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #000000de;
+  margin: 0px;
+}
+.rating_container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: ;
+}
+.fa-star {
+  color: orange;
+}
+.ratin_point {
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: #5e6366;
+}
+.cart_description {
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: #787885;
+  margin: 0px;
+  max-width: 196px;
+}
+.btn_2 {
+  /* text-align: right; */
+  margin-top: 50px;
+  color: #e02c6dde;
+  font-size: 1rem;
+  font-weight: 700;
+  background-color: white;
+  border: none;
+}
+.grid_btn {
+  text-align: right;
+}
 
 @media screen and (max-width: 576px) {
   .icon,
@@ -127,5 +215,23 @@ li > a {
   .res_bars {
     display: inline;
     margin: 0 auto;
+  }
+  .sponsor_logo {
+    grid-template-columns: repeat(3, 1fr);
+    border: none;
+    gap: ;
+
+    /* margin-top: 50px; */
+    max-width: 275px;
+    margin: 0 auto;
+    padding: 0px;
+    row-gap: 10px;
+  }
+  .popular_img {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .popular_cart > img {
+    border-radius: 5px;
+    width: 100%;
   }
 }
