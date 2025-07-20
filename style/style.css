@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+.poppins-thin {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+/* SHARED STYLE */
+.display_flex {
+  display: flex;
+}
+.nav {
+  align-items: center;
+  justify-content: space-between;
+}
+.nav_item {
+  gap: 34px;
+  list-style-type: none;
+}
+.nav_item > ul > li {
+  text-decoration: none;
+}
+li > a {
+  text-transform: none;
+  text-decoration: none;
+  color: #3a3a3a;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.icon {
+  gap: 34px;
+  align-items: center;
+}
+.header {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+.nav_title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #3a3a3a;
+}
+.banner {
+  align-items: center;
+  gap: 133px;
+  margin: 50px;
+
+  max-width: 1140px;
+  margin: 50px auto;
+}
+.banner_content {
+  max-width: 582px;
+}
+.banner_img_content {
+  background-image: url('/images/Circle\ design.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  border: 3px solid rgb(241, 228, 255);
+  border-radius: 50%;
+}
+.banner_title {
+  font-size: 3.25rem;
+  font-size: 700;
+  color: #3a3a3a;
+}
+.banner_description {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #3a3a3a;
+}
+.btn_1 {
+  border-radius: 41px;
+  background: rgb(224, 44, 109);
+  border: none;
+  padding: 10px 24px;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1.5rem;
+}
+.banner_img {
+  width: 100%;
+}
+.res_cart,
+.res_bars {
+  display: none;
+}
+
+@media screen and (max-width: 576px) {
+  .icon,
+  .banner {
+    flex-direction: column;
+  }
+  .nav_item {
+    display: none;
+  }
+  .banner {
+    flex-direction: column-reverse;
+  }
+  .banner_title {
+    margin-top: -70px;
+    font-size: 1.75rem;
+  }
+  .banner_description {
+    font-size: 0.875rem;
+    max-width: 321px;
+    margin: 0 auto;
+  }
+  .banner_img {
+    width: 100%;
+  }
+  .banner_content {
+    text-align: center;
+  }
+  .banner_img_content {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .btn_1 {
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+  .res_cart,
+  .res_bars {
+    display: inline;
+    margin: 0 auto;
+  }
+}
